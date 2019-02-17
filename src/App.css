@@ -5,15 +5,13 @@
 .RoomList {
 	float: left;
 	width: 25vw;
-	height: 100vh;
+	min-height: 100vh;
+	background-repeat: repeat-y;
 	background-color: #DADBBD;
+	font-family: 'Zilla Slab', serif;
 }
 
-.ChatRoom {
-	float: right;
-	width: 75vw;
-	height: 100vh;
-	background: url(./word.jpg) no-repeat fixed;
-	background-size: cover;
-	opacity: 0.3;
+.RoomList h1 {
+	text-align: center;
 }
+
