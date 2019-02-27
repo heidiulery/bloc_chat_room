@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './MessageList.css';
 
 class MessageList extends Component {
 	constructor(props) {
@@ -34,17 +35,16 @@ class MessageList extends Component {
       		roomId: this.state.roomId
 		});
 		this.setState({
-			username: '',
 			content: '',
-			sentAt: '',
-			roomId: ''
 		});
+			console.log(this.state.username);
+			console.log(this.state.content);
 	}
 
 	handleChange(e) {
 		e.preventDefault();
 		this.setState({
-			username: this.props.user,
+			user: this.props.user,
 			content: e.target.value,
 			sentAt: this.props.firebase.database.ServerValue.TIMESTAMP,
 			roomId: this.props.activeRoom
@@ -63,9 +63,17 @@ class MessageList extends Component {
       		})
     	);
 
+		const messageBar = (
+			<form onSubmit={ this.createMessage } >
+				<input type="text" value={ this.state.content } onChange={ this.handleChange } className="inputField" placeholder="Enter message . . ." />
+				<input type="submit" className="submitButton" value="Send" />
+			</form>
+		);
+
 		return (
-			<section>
+			<section className="messageList">
 				<div>{ messageList }</div>
+				<div>{ messageBar }</div>
 			</section>
 		);
 	}

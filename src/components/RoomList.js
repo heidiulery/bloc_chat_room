@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../index.css';
+import './RoomList.css';
 
 class RoomList extends Component {
 	constructor(props) {

@@ -1,0 +1,62 @@
+/* RoomList styling */
+.blocChatLogo {
+    width: 25vw;                                                                                      
+    position: relative; 
+}       
+    
+button {                                                                                              
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: #84D0D4;                                                                        
+    margin: auto;                                                                                     
+    font-family: 'Zilla Slab', serif;                                                                 
+    font-size: 1.3em;
+}   
+                                                                                                      
+.listTitle { 
+    font-size: 2em;
+    text-align: center;
+}       
+                                                                                                      
+li {    
+    font-size: 1.5em;
+    padding: 5px;
+}               
+                    
+.addRoom {          
+    width: 90%;     
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;                                                                               
+    margin-top: 20px;                                                                                 
+}                   
+                
+.inputStyle {
+    padding: 10px;                                                                                    
+    font-size: 1.2em;                                                                                 
+}       
+            
+.create {       
+    background-color: #84D0D4;
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 15px;
+}           
+        
+.cancel {                                                                                             
+    background-color: #FFD1DB;                                                                        
+    padding: 8px;                                                                                     
+}
+
+
+.roomList form {
+    background-color: white;
+    border: solid 8px #84D0D4;
+    border-radius: 10px;
+    position: absolute;
+    left: 50vw;
+    top: 15vh;
+    padding: 30px;
+    z-index: 1;
+}
+
