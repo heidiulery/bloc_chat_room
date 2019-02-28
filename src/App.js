@@ -62,6 +62,8 @@ class App extends Component {
 						? <MessageList 
 							firebase={ firebase }
 							activeRoom={ this.state.activeRoom.key }
+							setUser={ this.setUser }
+							user={ this.state.user }
 						/>
 						: null
 					}

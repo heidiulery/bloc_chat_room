@@ -29,7 +29,7 @@ class MessageList extends Component {
 	createMessage(e) {
 		e.preventDefault();
 		this.messagesRef.push({
-			username: this.state.username,
+			username: this.props.user ? this.props.user.displayName : 'Guest',
       		content: this.state.content,
       		sentAt: this.state.sentAt,
       		roomId: this.state.roomId
@@ -37,8 +37,6 @@ class MessageList extends Component {
 		this.setState({
 			content: '',
 		});
-			console.log(this.state.username);
-			console.log(this.state.content);
 	}
 
 	handleChange(e) {
